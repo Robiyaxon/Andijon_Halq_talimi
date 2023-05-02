@@ -1,0 +1,125 @@
+:root {
+  --background-gradient: #01bacf;
+  --gray: #01bacf;
+  --darkgray: #01bacf;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+  background-color: #f2f4f6;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+
+}
+
+.img span {
+  line-height: 20px;
+  font-size: 15px;
+  font-size: 'Montserrat-Medium', sans-serif;
+}
+
+.img img {
+  height: 70px;
+  margin-right: 15px;
+
+}
+
+.right_place {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  flex: 1;
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 4em;
+  height: 2em;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.4em;
+  background-color: #01bacf;
+  transition: 0.25s all ease;
+  pointer-events: none;
+}
+
+.select:hover::after {
+  color: blue;
+}
+
+.contact {
+  /* width: 20%; */
+  margin-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact a {
+  font-size: 15px;
+  font-family: 'Montserrat-Medium', sans-serif;
+  color: #313131;
+  text-decoration: none;
+  line-height: 25px;
+  color: white;
+  font-weight: 900 !important;
+}
+
+.blue,
+.blue2 {
+  width: 25px;
+  height: 25px;
+  background-color: blue;
+  text-align: center;
+  align-content: center;
+  border-radius: 2px;
+  margin: 0 2px;
+}
+
+.blue2 {
+  background-color: #3b5998;
+
+}
+
+.contact :nth-child(2) {
+  background-color: #1da1f2;
+}
+
+.contact :nth-child(3) {
+  background-color: #34a853;
+}
+
+.contact :nth-child(4) {
+  background-color: #bd081c;
+}
