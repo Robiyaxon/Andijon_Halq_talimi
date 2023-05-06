@@ -1,4 +1,5 @@
 import "./App.css";
+import Foto from "./components/foto/Foto";
 import Home from "./components/home/Home";
 import Header from "./components/home/header/Header";
 // import Page from "./components/loading/Loading";
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       {/* <Header /> */}
       <Home/>
+      {/* <Foto/> */}
     </div>
   );
 }

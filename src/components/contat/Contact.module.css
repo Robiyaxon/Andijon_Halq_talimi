@@ -1,0 +1,10 @@
+.Contact {
+    border: 2px solid red;
+    padding: 32px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Contact h1{
+    width: 100%;
+}
