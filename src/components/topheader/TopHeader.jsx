@@ -3,6 +3,7 @@ import style from "./TopHeader.module.css";
 import logo from "../../assets/gerb.png";
 import i18n from "../../i18n";
 import { useTranslation } from "react-i18next";
+import telegram from "../../assets/telegran.png";
 import {
   FacebookOutlined,
   MailOutlined,
@@ -22,7 +23,11 @@ const TopHeader = () => {
   return (
     <div className={style.Wrapper}>
       <div className={style.img}>
-        <img src={logo} alt="" /> <span>Ўзбекистон Республикаси</span>
+        <img src={logo} alt="" />{" "}
+        <span>
+          O`zbekiston Respublikasi Oliy ta`lim, fan <br /> va innovatsiyalar
+          vazirligi
+        </span>
       </div>
       <div className={style.right_place}>
         {/* <div className={style.contact}>
@@ -35,7 +40,7 @@ const TopHeader = () => {
             tuhtaevarobiyahon@gmail.com
           </a>
         </div> */}
- <div className={style.contact}>
+        <div className={style.contact}>
           <div className={style.blue}>
             <a href="">
               <FacebookOutlined />
@@ -64,7 +69,6 @@ const TopHeader = () => {
             <option value="eng">Eng</option>
           </select>
         </div>
-       
       </div>
     </div>
   );

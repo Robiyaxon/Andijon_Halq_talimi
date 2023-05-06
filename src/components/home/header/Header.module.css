@@ -1,16 +1,16 @@
 .about_me {
     position: relative;
-    height: 500px;
+    height: 90vh;
 }
 
 .about_me img {
     width: 100%;
-    height: 500px;
-    object-fit: cover !important;
+    height: 90vh;
+    object-fit:fill !important;
 }
 
 .text_content {
-    background: rgba(11, 9, 9, 0);
+    background: rgba(0, 0, 0, 0.559);
     position: absolute;
     top: 0;
     right: 0;
@@ -24,6 +24,6 @@
 .text_content h1 {
     color: white;
     font-family: 'Nobile', sans-serif;
-    font-size: 60px;
+    font-size: 55px;
     text-align: center;
 }

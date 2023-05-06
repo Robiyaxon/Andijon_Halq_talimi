@@ -1,14 +1,18 @@
-import './App.css';
-import Header from './components/header/Header';
-import Navbar from './components/navbar/Navbar';
-import TopHeader from './components/topheader/TopHeader';
+import "./App.css";
+import Home from "./components/home/Home";
+import Header from "./components/home/header/Header";
+// import Page from "./components/loading/Loading";
+import Navbar from "./components/navbar/Navbar";
+import TopHeader from "./components/topheader/TopHeader";
 
 function App() {
   return (
     <div className="App">
-      <TopHeader/>
-      <Navbar/>
-      <Header/>
+      {/* <Page /> */}
+      <TopHeader />
+      <Navbar />
+      {/* <Header /> */}
+      <Home/>
     </div>
   );
 }

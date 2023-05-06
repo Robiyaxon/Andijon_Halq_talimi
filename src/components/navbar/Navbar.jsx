@@ -10,7 +10,7 @@ const items = [
         rel="noopener noreferrer"
         href="https://www.antgroup.com"
       >
-        1st menu item
+        Boshqarma haqida
       </a>
     ),
   },
@@ -22,7 +22,7 @@ const items = [
         rel="noopener noreferrer"
         href="https://www.aliyun.com"
       >
-        2nd menu item
+        Rahbariyat
       </a>
     ),
   },
@@ -34,7 +34,31 @@ const items = [
         rel="noopener noreferrer"
         href="https://www.luohanacademy.com"
       >
-        3rd menu item
+        Boshqarma tuzilmasi
+      </a>
+    ),
+  },
+  {
+    key: "4",
+    label: (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.luohanacademy.com"
+      >
+        Tizimdagi tashkilotlar
+      </a>
+    ),
+  },
+  {
+    key: "4",
+    label: (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.luohanacademy.com"
+      >
+       Bo`sh ish o`rinlari 
       </a>
     ),
   },
@@ -49,7 +73,7 @@ const Navbar = () => {
         placement="bottomLeft"
         arrow
       >
-        <Button>Vazirlik haqida</Button>
+        <Button> Boshqarma haqida </Button>
       </Dropdown>
       <Dropdown
         menu={{
@@ -58,18 +82,8 @@ const Navbar = () => {
         placement="bottom"
         arrow
       >
-        <Button>Hujjatlar</Button>
+        <Button>Ochiq ma`lumotlar </Button>
       </Dropdown>
-      <Dropdown
-        menu={{
-          items,
-        }}
-        placement="bottomRight"
-        arrow
-      >
-        <Button>Muassasalar</Button>
-      </Dropdown>
-      <br />
       <Dropdown
         menu={{
           items,
@@ -77,16 +91,7 @@ const Navbar = () => {
         placement="topLeft"
         arrow
       >
-        <Button>Matbuot Hizmati</Button>
-      </Dropdown>
-      <Dropdown
-        menu={{
-          items,
-        }}
-        placement="top"
-        arrow
-      >
-        <Button>Loyihalar</Button>
+        <Button>Matbuot xizmati</Button>
       </Dropdown>
       <Dropdown
         menu={{
@@ -96,6 +101,24 @@ const Navbar = () => {
         arrow
       >
         <Button>Yangiliklar</Button>
+      </Dropdown>
+      <Dropdown
+        menu={{
+          items,
+        }}
+        placement="topRight"
+        arrow
+      >
+        <Button>Faoliyat</Button>
+      </Dropdown>
+      <Dropdown
+        menu={{
+          items,
+        }}
+        placement="topRight"
+        arrow
+      >
+        <Button>Elonlar</Button>
       </Dropdown>
     </div>
   );

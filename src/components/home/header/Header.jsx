@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./Header.module.css";
-import img from "../../assets/picture1.jpg";
-import img2 from "../../assets/picture2.jpg";
-import img3 from "../../assets/picture3.jpg";
+import img from "../../../assets/picture1.jpg";
+import img2 from "../../../assets/picture2.jpg";
+import img3 from "../../../assets/picture3.jpg";
 import { Carousel } from "antd";
 const Header = () => {
   return (
@@ -20,7 +20,8 @@ const Header = () => {
       </Carousel>
       <div className={style.text_content}>
         <h1>
-          O`zbekiston Respublikasi <br /> ..... Vazirligi
+          Oliy ta`lim, fan va innovatsiyalar vazirligining <br /> Andijon
+          viloyati hududiy boshqarmasi
         </h1>
       </div>
     </div>
