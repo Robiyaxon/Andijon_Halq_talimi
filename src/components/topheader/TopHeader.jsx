@@ -3,14 +3,14 @@ import style from "./TopHeader.module.css";
 import logo from "../../assets/gerb.png";
 import i18n from "../../i18n";
 import { useTranslation } from "react-i18next";
-import telegram from "../../assets/telegran.png";
+// import telegram from "../../assets/telegran.png";
 import {
   FacebookOutlined,
   MailOutlined,
   InstagramOutlined,
   YoutubeFilled,
 } from "@ant-design/icons";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 const TopHeader = () => {
   const defaultLang = localStorage.getItem("lang") || "uz";
   const [lang, setLang] = useState(defaultLang);

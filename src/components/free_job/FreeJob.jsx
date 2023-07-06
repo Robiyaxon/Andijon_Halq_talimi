@@ -4,7 +4,7 @@ import { useState } from "react";
 import { instance } from "../../api/API";
 import img from "../../assets/ish.jpg";
 import { HomeTwoTone, SendOutlined } from "@ant-design/icons";
-import { Button, Form, Input, Modal, Select } from "antd";
+import { Button, Form, Input, Modal } from "antd";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 // import { Option } from "antd/lib/mentions";
@@ -97,9 +97,9 @@ const FreeJob = () => {
 
   const map = data.map((a) => {
     // setOpen(false)
-    const onClick = ()=>{
-      setOpen(!open)
-    }
+    // const onClick = ()=>{
+    //   setOpen(!open)
+    // }
     // let open2 = false
     return(
     <div className={style.card} key={a.id}>
