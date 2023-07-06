@@ -10,6 +10,7 @@ import {
   InstagramOutlined,
   YoutubeFilled,
 } from "@ant-design/icons";
+import { NavLink } from "react-router-dom";
 const TopHeader = () => {
   const defaultLang = localStorage.getItem("lang") || "uz";
   const [lang, setLang] = useState(defaultLang);
@@ -22,13 +23,12 @@ const TopHeader = () => {
   };
   return (
     <div className={style.Wrapper}>
-      <div className={style.img}>
+      <a href="/" className={style.img}>
         <img src={logo} alt="" />{" "}
         <span>
-          O`zbekiston Respublikasi Oliy ta`lim, fan <br /> va innovatsiyalar
-          vazirligi
+          {t("logo1")} <br /> {t("logo2")}
         </span>
-      </div>
+      </a>
       <div className={style.right_place}>
         {/* <div className={style.contact}>
           <a href="">
@@ -66,7 +66,7 @@ const TopHeader = () => {
           <select name="lang" value={lang} onChange={handleChange}>
             <option value="uz">UZ</option>
             <option value="ru">RU</option>
-            <option value="eng">Eng</option>
+            <option value="eng">EN</option>
           </select>
         </div>
       </div>

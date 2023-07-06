@@ -1,7 +1,7 @@
 :root {
-  --background-gradient: #01bacf;
-  --gray: #01bacf;
-  --darkgray: #01bacf;
+  --background-gradient: #162e60;
+  --gray: #162e60;
+  --darkgray: #162e60;
 }
 
 .Wrapper {
@@ -14,13 +14,14 @@
 .img {
   display: flex;
   align-items: center;
-
+  text-decoration: none;
+  color: #000;
 }
 
 .img span {
   line-height: 20px;
   font-size: 15px;
-  font-size: 'Montserrat-Medium', sans-serif;
+  font-family: 'Montserrat-Medium', sans-serif;
 }
 
 .img img {
@@ -69,14 +70,15 @@ select::-ms-expand {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0.4em;
-  background-color: #01bacf;
+  padding: 0.3em 0.4rem 0.4rem;
+  background-color: #162e60;
   transition: 0.25s all ease;
   pointer-events: none;
+  color: #fff;
 }
 
 .select:hover::after {
-  color: blue;
+  color: white;
 }
 
 .contact {
@@ -122,4 +124,32 @@ select::-ms-expand {
 
 .contact :nth-child(4) {
   background-color: #bd081c;
+}
+
+@media(min-width:0) and (max-width:1000.9px) {
+  .img span {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .img {
+    display: none;
+  }
+  .right_place {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .Wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    background-color: #999da2;
+  }
+  
 }

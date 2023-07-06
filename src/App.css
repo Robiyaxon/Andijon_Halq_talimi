@@ -6,3 +6,11 @@
    border: none !important;
    margin: 0 2rem;
 }
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-image .ant-image-img{
+    height: 100%;
+}
+
+.ant-image.css-dev-only-do-not-override-yp8pcc{
+  grid-area: one;
+}

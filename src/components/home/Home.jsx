@@ -6,15 +6,18 @@ import News from "../news/News";
 import Links from "../links/Links";
 import Contact from "../contat/Contact";
 import Foto from "../foto/Foto";
+import { MyMap } from "./map/Map";
 const Home = () => {
   return (
     <div>
       <Header />
       {/* <Service /> */}
       <News />
-      {/* <Links/> */}
-      <Foto/>
-      <Contact/>
+
+      <Foto />
+      <Links />
+      <MyMap />
+      <Contact />
     </div>
   );
 };

@@ -1,8 +1,22 @@
-.Navbar{
+.Navbar {
     height: 55px;
-    background-color: #01bacf;
+    background-color: #162e60;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 3rem;
+}
+
+.Navbar span {
+    color: #fff !important;
+}
+
+.Navbar a {
+    color: white !important;
+}
+
+@media(min-width:0) and (max-width:1000.9px) {
+    .Navbar {
+        display: none;
+    }
 }

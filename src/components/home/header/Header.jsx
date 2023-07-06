@@ -1,13 +1,21 @@
 import React from "react";
-import style from "./Header.module.css";
+import { Carousel } from "antd";
+import { useTranslation } from "react-i18next";
 import img from "../../../assets/picture1.jpg";
 import img2 from "../../../assets/picture2.jpg";
 import img3 from "../../../assets/picture3.jpg";
-import { Carousel } from "antd";
+import img4 from "../../../assets/picture7.jpg";
+import img5 from "../../../assets/picture8.jpg";
+import img6 from "../../../assets/picture9.jpg";
+
+import style from "./Header.module.css";
+
 const Header = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className={style.about_me}>
-      <Carousel autoplay>
+    <Carousel effect="fade" autoplay autoplaySpeed={3000} swipeable={false}>
         <div>
           <img src={img} alt="" />
         </div>
@@ -17,11 +25,19 @@ const Header = () => {
         <div>
           <img src={img3} alt="" />
         </div>
-      </Carousel>
+        <div>
+          <img src={img4} alt="" />
+        </div>
+        <div>
+          <img src={img5} alt="" />
+        </div>
+        <div>
+          <img src={img6} alt="" />
+        </div>
+    </Carousel>
       <div className={style.text_content}>
         <h1>
-          Oliy ta`lim, fan va innovatsiyalar vazirligining <br /> Andijon
-          viloyati hududiy boshqarmasi
+          {t('companyName')}
         </h1>
       </div>
     </div>

@@ -1,18 +1,20 @@
 import React from "react";
 import "./News.css";
-import img1 from "../../assets/news1.jpg";
-import img2 from "../../assets/news2.jpg";
-import img3 from "../../assets/news4.png";
-import img4 from "../../assets/news5.jpg";
+import img1 from "../../assets/news_page.jpg";
+import img2 from "../../assets/news_page2.jpg";
+import img3 from "../../assets/news_page4.jpg";
+import img4 from "../../assets/news_page5.jpg";
+import { useTranslation } from "react-i18next";
 const News = () => {
+  const { t } = useTranslation();
+
   const map = [
     {
       id: 1,
       img: img1,
       day: 3,
       month: "dec",
-      title:
-        "Нефть ва газ конлари геологияси ва қидируви институти томонидан якунланган ва..",
+      title: "Xalqaro hamkorlik ",
       description: "",
     },
     {
@@ -21,7 +23,7 @@ const News = () => {
       day: 3,
       month: "dec",
       title:
-        "Нефть ва газ конлари геологияси ва қидируви институти томонидан якунланган ва..",
+        "Yoshlar akademiyasiga a'zolikka qabul qilingan yoshlarga a'zolik sertifikatlari topshirildi deb bularni",
       description: "",
     },
     {
@@ -29,17 +31,15 @@ const News = () => {
       img: img3,
       day: 3,
       month: "dec",
-      title:
-        "Нефть ва газ конлари геологияси ва қидируви институти томонидан якунланган ва..",
+      title: "Jahon banki vakillari tomonidan tashkil qilingan seminar",
       description: "",
     },
     {
       id: 4,
-      img: img3,
-      day:4,
+      img: img4,
+      day: 4,
       month: "dec",
-      title:
-        "Нефть ва газ конлари геологияси ва қидируви институти томонидан якунланган ва..",
+      title: "Andijon yoshlar texnoparki a'zolari Koreya davlatida",
       description: "",
     },
   ];
@@ -61,7 +61,7 @@ const News = () => {
   ));
   return (
     <div className="News_Page">
-      <h1>Yangiliklar</h1>
+      <h1>{t("nav4")}</h1>
       {map2}
       {map2}
     </div>

@@ -1,125 +1,47 @@
 import React from "react";
-import style from "./Navbar.module.css";
 import { Button, Dropdown } from "antd";
-const items = [
-  {
-    key: "1",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Boshqarma haqida
-      </a>
-    ),
-  },
-  {
-    key: "2",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
-      >
-        Rahbariyat
-      </a>
-    ),
-  },
-  {
-    key: "3",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        Boshqarma tuzilmasi
-      </a>
-    ),
-  },
-  {
-    key: "4",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        Tizimdagi tashkilotlar
-      </a>
-    ),
-  },
-  {
-    key: "4",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-       Bo`sh ish o`rinlari 
-      </a>
-    ),
-  },
-];
+import { useTranslation } from "react-i18next";
+
+import style from "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
+  const { t } = useTranslation();
   return (
     <div className={style.Navbar}>
+      <Button>
+        <NavLink to="/">{t("home")}</NavLink>{" "}
+      </Button>
+      <Button>
+        <NavLink to="/ishlar">{t("work")}</NavLink>
+      </Button>
+      <Button>
+        <NavLink to={"/rahbariyat"}>{t("director")}</NavLink>{" "}
+      </Button>
+      <NavLink to="yangiliklar">
+        <Button>{t("nav4")}</Button>
+      </NavLink>
       <Dropdown
         menu={{
-          items,
+          items: [
+            {
+              key: "2",
+              label: <NavLink to="/paxtachilik">Paxtachilik</NavLink>,
+            },
+            {
+              key: "6",
+              label: <NavLink to="/tuman">Innovatsion tumanlar </NavLink>,
+            },
+          ],
         }}
         placement="bottomLeft"
         arrow
       >
-        <Button> Boshqarma haqida </Button>
+        <Button>{t("nav5")}</Button>
       </Dropdown>
-      <Dropdown
-        menu={{
-          items,
-        }}
-        placement="bottom"
-        arrow
-      >
-        <Button>Ochiq ma`lumotlar </Button>
-      </Dropdown>
-      <Dropdown
-        menu={{
-          items,
-        }}
-        placement="topLeft"
-        arrow
-      >
-        <Button>Matbuot xizmati</Button>
-      </Dropdown>
-      <Dropdown
-        menu={{
-          items,
-        }}
-        placement="topRight"
-        arrow
-      >
-        <Button>Yangiliklar</Button>
-      </Dropdown>
-      <Dropdown
-        menu={{
-          items,
-        }}
-        placement="topRight"
-        arrow
-      >
-        <Button>Faoliyat</Button>
-      </Dropdown>
-      <Dropdown
-        menu={{
-          items,
-        }}
-        placement="topRight"
-        arrow
-      >
-        <Button>Elonlar</Button>
-      </Dropdown>
+      <NavLink to="elonlar">
+        <Button>{t("Choices")}</Button>
+      </NavLink>
     </div>
   );
 };
