@@ -10,6 +10,7 @@ import {
   InstagramOutlined,
   YoutubeFilled,
 } from "@ant-design/icons";
+import { TbBrandTelegram } from "react-icons/tb";
 // import { NavLink } from "react-router-dom";
 const TopHeader = () => {
   const defaultLang = localStorage.getItem("lang") || "uz";
@@ -42,9 +43,6 @@ const TopHeader = () => {
         </div> */}
         <div className={style.contact}>
           <div className={style.blue}>
-            <a href="">
-              <FacebookOutlined />
-            </a>
           </div>
           <div className={style.blue}>
             <a href="">
@@ -58,7 +56,7 @@ const TopHeader = () => {
           </div>
           <div className={style.blue}>
             <a href="">
-              <YoutubeFilled />
+              <TbBrandTelegram />
             </a>
           </div>
         </div>

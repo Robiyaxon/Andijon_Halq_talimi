@@ -46,7 +46,7 @@ const News = () => {
   const map2 = map.map((a) => (
     <figure className="snip1527" key={a.id}>
       <div className="image">
-        <img src={a.img} />
+        <img src={a.img} alt=""/>
       </div>
       <figcaption>
         <div className="date">
@@ -56,7 +56,7 @@ const News = () => {
         <h3>{a.title}</h3>
         <p>{a.description}</p>
       </figcaption>
-      <a href="#"></a>
+      <a href="/"></a>
     </figure>
   ));
   return (

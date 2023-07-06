@@ -33,20 +33,6 @@ const Contact = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.facebook.com/groups/321377075523762/"
-          >
-            <TbBrandFacebook />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.instagram.com/reel/CoaCftxD-MA/"
-          >
-            <BsInstagram />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://t.me/Oliy_Talim_Vazirligi"
           >
             <TbBrandTelegram />

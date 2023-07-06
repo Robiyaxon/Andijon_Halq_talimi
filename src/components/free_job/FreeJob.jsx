@@ -52,8 +52,7 @@ const FreeJob = () => {
         form.resetFields();
         setCreateVisible(false);
         axios
-          .post(
-            "https://oliytalim.pythonanywhere.com/" + "api/ariza/",
+          .post( "https://oliytalim.pythonanywhere.com/" + "api/ariza/",
             {
               familiya: values.familiya,
               ish: id,

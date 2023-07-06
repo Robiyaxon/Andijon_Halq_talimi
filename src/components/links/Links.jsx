@@ -114,11 +114,11 @@ class Slide extends React.Component {
 
 const SliderControl = ({ type, title, handleClick }) => {
   return (
-    <a className={`btn btn--${type}`} title={title} onClick={handleClick}>
+    <span className={`btn btn--${type}`} title={title} onClick={handleClick} >
       <svg className="icon" viewBox="0 0 24 24">
         <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
       </svg>
-    </a>
+    </span>
   );
 };
 
@@ -168,7 +168,7 @@ class Slider extends React.Component {
       .toLowerCase()}`;
     const wrapperTransform = {
       transform:
-        current == 3
+        current === 3
           ? `translateX(-60%)`
           : current
           ? `translateX(-${3 + current * (100 / slides.length)}%)`

@@ -14,7 +14,7 @@ const Compititions = () => {
   }, [setData]);
   const data2 = data.map((a) => (
     <div className="box">
-      <img className="main-img" src={a.img}/>
+      <img className="main-img" src={a.img} alt=""/>
       <div className="box-content">
         <a href={a.link} className="PageameNavlink">
           {" "}

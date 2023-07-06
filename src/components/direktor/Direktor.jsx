@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import style from "./Direktor.module.css";
 import { instance } from "../../api/API";
-import Direktor_Foto from "../direktor_foto/Direktor_foto";
+import DirektorFoto from "../direktor_foto/Direktor_foto";
 import { useTranslation } from "react-i18next";
 const Direktor = () => {
   const [state, setState] = useState(false);
@@ -53,7 +53,7 @@ const Direktor = () => {
   ));
   return (
     <div>
-      <Direktor_Foto />
+      <DirektorFoto />
       <div className={style.body}>
         <h1 className={style.title}>{t("director")}</h1>
         {map2}
