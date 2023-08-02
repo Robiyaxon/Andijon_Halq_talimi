@@ -1,0 +1,18 @@
+.Footer {
+    background: #162e60;
+    padding: 20px;
+}
+.Footer p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+@media(min-width:0) and (max-width:750.9){
+    .Footer {
+        padding: 10px;
+    }
+    .Footer p{
+        font-size: 15px;
+    }   
+}

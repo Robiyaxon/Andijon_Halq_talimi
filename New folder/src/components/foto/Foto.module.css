@@ -1,0 +1,139 @@
+.wrap {
+  background: #162e60;
+  padding: 30px 100px 50px;
+}
+
+.wrap h1 {
+  font-family: 'Russo One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.main {
+  background: #162e60;
+
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 6px;
+  /* box-shadow: -5px -3px 20px #cc00ff, 5px 3px 20px #68e1fd; */
+  display: grid;
+  grid-template-areas: 'one two' 'one seven ';
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)),
+    linear-gradient(90deg, #DA02FF 0%, #68E1FD 100%);
+
+}
+
+
+.main::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 6px;
+  top: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: #160448;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.main img {
+  object-fit: contain;
+  z-index: 10;
+  transition: 0.2s all linear;
+  border: 2px solid transparent;
+  /* border-radius: 10px; */
+}
+
+.main img:hover {
+  border: 2px solid #8f00ff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.i1 {
+  border-top-left-radius: 2px;
+}
+
+.i1_block {
+  display: flex;
+  flex-direction: row !important;
+  grid-area: two;
+}
+
+.i2_block {
+  display: flex;
+  flex-direction: row !important;
+  grid-area: seven;
+}
+
+.i4 {
+  grid-area: three;
+}
+
+.i5 {
+  grid-area: five;
+}
+
+.main .i2_block img {
+  object-fit: cover !important;
+  width: 100%;
+}
+
+.main div,
+.main img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.main div img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .i2_block,
+.main div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.i7 {
+  height: 190px;
+}
+
+.i8 {
+  height: 190px;
+}
+
+.i9 {
+  grid-area: eight;
+  width: 100%;
+}
+
+.i10,
+.i5 {
+  width: 100%;
+  object-fit: cover !important;
+}
+
+.i10 {
+  grid-area: nine;
+}
+
+@media (min-width: 0) and (max-width: 600.9px) {
+  .wrap {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+.ant-btn-default {
+    background-color: transparent !important;
+    font-size: 15px;
+    line-height: 20px;
+   font-weight: 500;
+   border: none !important;
+   margin: 0 2rem;
+}
+
+:where(.css-dev-only-do-not-override-yp8pcc).ant-image .ant-image-img{
+    height: 100%;
+}
+
+.ant-image.css-dev-only-do-not-override-yp8pcc{
+  grid-area: one;
+}

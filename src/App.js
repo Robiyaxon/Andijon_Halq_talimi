@@ -11,6 +11,9 @@ import Direktor from "./components/direktor/Direktor";
 import Footer from "./components/footer/Footer";
 import FreeJob from "./components/free_job/FreeJob";
 import ScrollToTop from "./ScroleOn";
+
+
+
 import Paxtachilik from "./components/events/paxtachilik/Paxtachilik";
 import Region from "./components/region/Region";
 import Compititions from "./components/compititions/Compititions";
