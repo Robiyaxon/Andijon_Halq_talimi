@@ -64,7 +64,7 @@ const News = () => {
       <h1>{t("nav4")}</h1>
       {map2}
       {map2}
-    </div>
+    </div>       
   );
 };
 
