@@ -56,8 +56,13 @@ const RightNav = ({ open, setOpen }) => {
         </Link>
       </li>
       <li>
-        <Link onClick={() => setOpen(!open)} to="/yangiliklar">
-          {t("nav4")}
+        <Link onClick={() => setOpen(!open)} to="/news">
+          {t("region_news")}
+        </Link>
+      </li>
+      <li>
+        <Link onClick={() => setOpen(!open)} to="/uzb_news">
+          {t("news_uzb")}
         </Link>
       </li>
       <li>
