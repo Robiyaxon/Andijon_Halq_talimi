@@ -3,7 +3,7 @@ import style from "./Footer.module.css"
 const Footer = () => {
   return (
     <div className={style.Footer}>
-      <p>Copyright 2022 The All Rights Reserved.</p>  
+      <p>Copyright 2023 The All Rights Reserved.</p>  
     </div>
   )
 }
