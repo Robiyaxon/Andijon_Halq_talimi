@@ -1,40 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./Region.module.css";
 import img1 from "../../assets/news1.jpg";
+import { instance } from "../../api/API";
 const Region = () => {
+  const [data, setData] = useState([]);
+  console.log(data);
+  useEffect(() => {
+    instance
+      .get("hududlar/")
+      .then((response) => setData(response.data));
+  }, [setData]);
+const map=data.map(a=>
+  <div className={style.cards}>
+  <h1>{a.manzil}</h1>
+  <img src={img1} alt="" />
+  <div className={style.wrapper}>
+    <p>axoli:{a.aholi}</p>
+    <p>Инновацион лойиҳалар: {a.loyhalar_soni}</p>
+    <p>Майдон: {a.maydoni} км²</p>
+    <p>Яратилган иш жойи: {a.ish_joyi_soni}</p>
+  </div>
+</div>
+  )
   return (
     <div className={style.Regions}>
       <h1>Инновацион ҳудудлар</h1>
-      <div className={style.cards}>
-        <h1>Andijon shahar - Oltinko`l tumani</h1>
-        <img src={img1} alt="" />
-        <div className={style.wrapper}>
-          <p>axoli:200</p>
-          <p>Инновацион лойиҳалар: 14</p>
-          <p>Майдон: 2 110 км²</p>
-          <p>Яратилган иш жойи: 150</p>
-        </div>
-      </div>
-      <div className={style.cards}>
-        <h1>Andijon shahar Asaka tumani</h1>
-        <img src={img1} alt="" />
-        <div className={style.wrapper}>
-          <p>Axoli:200</p>
-          <p>Инновацион лойиҳалар: 14</p>
-          <p>Майдон: 2 110 км²</p>
-          <p>Яратилган иш жойи: 150</p>
-        </div>
-      </div>
-      <div className={style.cards}>
-        <h1>Andijon shahri Bo`z tumani</h1>
-        <img src={img1} alt="" />
-        <div className={style.wrapper}>
-          <p>axoli:200</p>
-          <p>Инновацион лойиҳалар: 14</p>
-          <p>Майдон: 2 110 км²</p>
-          <p>Яратилган иш жойи: 150</p>
-        </div>
-      </div>
+   {map}
     </div>
   );
 };

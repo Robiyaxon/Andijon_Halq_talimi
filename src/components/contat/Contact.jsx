@@ -1,10 +1,8 @@
 import React from "react";
-import { TbBrandFacebook, TbBrandTelegram } from "react-icons/tb";
-import { BsInstagram } from "react-icons/bs";
-import { RiYoutubeLine } from "react-icons/ri";
-
+import {TbBrandTelegram } from "react-icons/tb";
 import style from "./Contact.module.css";
 import { useTranslation } from "react-i18next";
+import { MailOutlined } from "@ant-design/icons";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -30,20 +28,12 @@ const Contact = () => {
       <div className={style.links}>
         <h2>{t("social_media")}</h2>
         <div className={style.social_net}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://t.me/Oliy_Talim_Vazirligi"
-          >
-            <TbBrandTelegram />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.youtube.com/channel/UC62RfVrE7-JfA8JFBMO3WUA"
-          >
-            <RiYoutubeLine />
-          </a>
+        <a href="https://t.me/OTFIV_Andijon">
+              <TbBrandTelegram />
+            </a>
+            <a href="mailto:And_OTIF@mail.ru">
+              <MailOutlined />
+            </a>
         </div>
       </div>
     </div>

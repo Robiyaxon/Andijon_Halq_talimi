@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 import "./App.css";
 
 
@@ -18,7 +18,8 @@ import Paxtachilik from "./components/events/paxtachilik/Paxtachilik";
 import Region from "./components/region/Region";
 import Compititions from "./components/compititions/Compititions";
 import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
-
+import NewsSingle from "./components/news/NewsSingle";
+import UzbNews from "./components/news/UzbNews";
 function App() {
   return (
     <div className="App">
@@ -34,9 +35,12 @@ function App() {
         <Route path="rahbariyat" element={<Direktor />} />
         <Route path="ishlar" element={<FreeJob />} />
         <Route path="elonlar" element={<Compititions />} />
-        <Route path="yangiliklar" element={<News />} />
+        <Route path="news/" element={<News/>} />
+        <Route path="uzb_news/" element={<UzbNews/>} />
         <Route path="paxtachilik" element={<Paxtachilik />} />
         <Route path="tuman" element={<Region />} />
+       
+        <Route path="news/:id" element={<NewsSingle />} />
       </Routes>
       <BurgerMenu />
       <Footer />

@@ -18,27 +18,28 @@ const Navbar = () => {
       <Button>
         <NavLink to={"/rahbariyat"}>{t("director")}</NavLink>{" "}
       </Button>
-      <NavLink to="yangiliklar">
-        <Button>{t("nav4")}</Button>
-      </NavLink>
       <Dropdown
         menu={{
           items: [
             {
               key: "2",
-              label: <NavLink to="/paxtachilik">Paxtachilik</NavLink>,
+              label: <NavLink to="/news">{t("region_news")}</NavLink>,
             },
             {
               key: "6",
-              label: <NavLink to="/tuman">Innovatsion tumanlar </NavLink>,
+              label: <NavLink to="/uzb_news">{t("news_uzb")} </NavLink>,
             },
           ],
         }}
         placement="bottomLeft"
         arrow
       >
-        <Button>{t("nav5")}</Button>
+        <Button>{t("nav4")}</Button>
       </Dropdown>
+     
+      
+      <NavLink to="/tuman"> <Button>{t("nav5")}</Button></NavLink>
+      
       <NavLink to="elonlar">
         <Button>{t("Choices")}</Button>
       </NavLink>

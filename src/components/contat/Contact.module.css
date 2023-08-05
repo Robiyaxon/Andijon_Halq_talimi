@@ -39,11 +39,12 @@
 
 .social_net {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .social_net a {
     font-size: 20px;
+    margin-right: 14px;
 }
 
 @media(min-width:0) and (max-width:850.9px) {

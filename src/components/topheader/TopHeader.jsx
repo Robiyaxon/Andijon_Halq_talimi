@@ -42,20 +42,15 @@ const TopHeader = () => {
           </a>
         </div> */}
         <div className={style.contact}>
+          
           <div className={style.blue}>
-          </div>
-          <div className={style.blue}>
-            <a href="">
+            <a href="mailto:And_OTIF@mail.ru">
               <MailOutlined />
             </a>
           </div>
+          
           <div className={style.blue}>
-            <a href="">
-              <InstagramOutlined />
-            </a>
-          </div>
-          <div className={style.blue}>
-            <a href="">
+            <a href="https://t.me/OTFIV_Andijon">
               <TbBrandTelegram />
             </a>
           </div>
