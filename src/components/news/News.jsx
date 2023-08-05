@@ -15,7 +15,7 @@ const News = () => {
       .then((response) => setData(response.data.local));
   }, []);
   const map2 = data.map((a) => (
-    <Link to={`news/${a.id}`}>
+    <Link to={`${a.id}`}>
       <figure className="snip1527" key={a.id}  >
       <div className="image">
         <img src={img1} alt=""/>
