@@ -30,6 +30,9 @@ function App() {
 
       {/* <Header /> */}
       <Routes>
+
+
+        
         <Route path="/" element={<Home />} />
         <Route path="direktor" element={<Direktor />} />
         <Route path="rahbariyat" element={<Direktor />} />
