@@ -1,6 +1,5 @@
 import React from "react";
 import "./News.css";
-import img1 from "../../assets/news_page.jpg";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -18,7 +17,7 @@ const News = () => {
     <Link to={`${a.id}`} key={a.id}>
       <figure className="snip1527" key={a.id}  >
       <div className="image">
-        <img src={img1} alt=""/>
+        <img src={"https://oliytalim.pythonanywhere.com/"+a.img} alt=""/>
       </div>
       <figcaption>
         <div className="date">
