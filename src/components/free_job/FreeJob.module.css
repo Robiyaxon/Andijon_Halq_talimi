@@ -10,6 +10,15 @@
     width: 100%;
 }
 
+.Titlteh2  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    width: 100%;
+    height: 60vh;
+}
+
 .card {
     border: 1px solid rgb(99, 89, 89);
     width: 26%;
@@ -39,44 +48,53 @@
     background-color: #162e60;
     color: white;
 }
-.card h3{
+
+.card h3 {
     color: red;
     text-align: center;
 }
-@media(min-width:0) and (max-width:480.9px){
+
+@media(min-width:0) and (max-width:480.9px) {
     .FreeJob {
         justify-content: center;
         padding: 22px 10px;
     }
+
     .FreeJob h1 {
         width: 100%;
         font-size: 22px;
         text-align: center;
     }
+
     .card {
         width: 90%;
         margin-top: 1rem;
     }
+
     .card h2 {
         font-size: 16px;
         text-align: center;
     }
 }
-@media(min-width:481px) and (max-width:600.9px){
+
+@media(min-width:481px) and (max-width:600.9px) {
     .FreeJob {
         justify-content: center;
         padding: 22px 10px;
     }
+
     .card {
         width: 70%;
         margin-top: 1rem;
     }
 }
-@media(min-width:601px) and (max-width:870.9px){
+
+@media(min-width:601px) and (max-width:870.9px) {
     .FreeJob {
         justify-content: space-between;
         padding: 22px 10px;
     }
+
     .card {
         width: 45%;
         margin-top: 1rem;

@@ -5,14 +5,14 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { instance } from "../../api/API";
 import { Link } from "react-router-dom";
-const News = () => {
+const News2 = () => {
   const { t } = useTranslation();
   const [data, setData] = useState([]);
   useEffect(() => {
     instance.get("news/").then((response) => setData(response.data.local));
   }, []);
   const map2 = data.map((a) => (
-    <Link to={`${a.id}`} key={a.id}>
+    <Link to={`news/${a.id}`} key={a.id}>
       <figure className="snip1527" key={a.id}>
         <div className="image">
           <img src={"https://oliytalim.pythonanywhere.com/" + a.img} alt="" />
@@ -36,4 +36,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default News2;
