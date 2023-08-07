@@ -12,8 +12,8 @@ const Compititions = () => {
       .get("tanlovlar/")
       .then((response) => setData(response.data.tanlovalar));
   }, [setData]);
-  const data2 = data.map((a) => (
-    <div className="box">
+  const data2 = data.map((a, index) => (
+    <div className="box" key={index}>
       <img className="main-img" src={a.img} alt=""/>
       <div className="box-content">
         <a href={a.link} className="PageameNavlink">

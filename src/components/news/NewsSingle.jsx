@@ -11,11 +11,9 @@ const NewsSingle = () => {
     instance.get("news/").then((response) => setData(response.data.local));
   }, []);
   let { id } = useParams();
-  console.log(id);
   const result = data.filter((num) => num.id == id);
-  console.log(result);
   const map2 = result.map((a) => (
-    <div className={style.Header}>
+    <div className={style.Header} key={a.id}>
       <h1>{a.uz_title}</h1>
       <p>{a.date}</p>
       <p>{a.uz_text}</p>

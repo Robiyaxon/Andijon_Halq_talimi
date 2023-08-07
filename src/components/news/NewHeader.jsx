@@ -6,8 +6,7 @@ const NewsHeader = (props) => {
   const { t } = useTranslation();
 
   const map=props.result.map(a=>
-   <>
-    <div>
+    <div key={a.id}>
       {/* <MobileNav1 /> */}
       <div className={style.HeaderNews}>
         <img src={"https://oliytalim.pythonanywhere.com/" +a.img} alt="rasm bor edi!" />
@@ -31,7 +30,7 @@ const NewsHeader = (props) => {
         </div>
       </div>
     </div>
-    </>)
+   )
   return (
     <div>
      {map}

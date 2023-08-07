@@ -86,7 +86,6 @@ const FreeJob = () => {
   };
 
   const showCreateModal = (id) => {
-    console.log(id);
     setId(id);
     setCreateVisible(true);
   };
@@ -95,11 +94,6 @@ const FreeJob = () => {
   };
 
   const map = data.map((a) => {
-    // setOpen(false)
-    // const onClick = ()=>{
-    //   setOpen(!open)
-    // }
-    // let open2 = false
     return(
     <div className={style.card} key={a.id}>
       <img src={img} alt="" />
@@ -115,7 +109,7 @@ const FreeJob = () => {
       </Button>
       <Modal
         title={"Yaratish"}
-        visible={createVisible}
+        open={createVisible}
         onOk={createHandleOk}
         onCancel={createHandleCancel}
         okText={"yaratish"}

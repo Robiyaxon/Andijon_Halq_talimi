@@ -16,11 +16,10 @@ const UzbNews = () => {
     return str.split(" ").splice(0,no_words).join(" ");
 }
 
-  const map2 = data.map((a) => {
-    console.log(a.text.slice(0, 10))
+  const map2 = data.map((a, index) => {
     return(
-    <a href={a.manba_link} alt="">
-      <figure className="snip1527" key={a.id}>
+    <a href={a.manba_link} alt="" key={index}>
+      <figure className="snip1527">
         <div className="image">
           <img src={img1} alt="" />
         </div>

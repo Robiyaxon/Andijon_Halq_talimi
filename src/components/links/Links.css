@@ -344,7 +344,6 @@ h3 {
 
 .slide--current .slide__content {
   animation: fade-in calc(var(--base-duration) / 2) var(--base-ease) forwards;
-  /* visibility: visible; */
 }
 
 .slide__content>*+* {

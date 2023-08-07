@@ -5,14 +5,13 @@ import { useTranslation } from "react-i18next";
 const Region = () => {
   const [data, setData] = useState([]);
   const {t} =useTranslation()
-  console.log(data);
   useEffect(() => {
     instance
       .get("hududlar/")
       .then((response) => setData(response.data));
   }, [setData]);
 const map=data.map(a=>
-  <div className={style.cards}>
+  <div className={style.cards} key={a.id}>
   <h1>{a.manzil}</h1>
   <img src={a.img} alt="" />
   <div className={style.wrapper}>

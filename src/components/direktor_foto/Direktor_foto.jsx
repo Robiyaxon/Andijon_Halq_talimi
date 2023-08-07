@@ -29,7 +29,7 @@ const Direktor_Foto = () => {
       <div className={style.text_content}>
         <h1>
           {data.map((a) => (
-            <>{a.uz_ism_familiya}</>
+            <span key={a.id}>{a.uz_ism_familiya}</span>
           ))}
         </h1>
       </div>
