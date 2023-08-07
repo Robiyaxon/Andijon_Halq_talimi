@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import style from "./Region.module.css";
-import img1 from "../../assets/news1.jpg";
 import { instance } from "../../api/API";
+import { useTranslation } from "react-i18next";
 const Region = () => {
   const [data, setData] = useState([]);
+  const {t} =useTranslation()
   console.log(data);
   useEffect(() => {
     instance
@@ -13,18 +14,18 @@ const Region = () => {
 const map=data.map(a=>
   <div className={style.cards}>
   <h1>{a.manzil}</h1>
-  <img src={img1} alt="" />
+  <img src={a.img} alt="" />
   <div className={style.wrapper}>
-    <p>axoli:{a.aholi}</p>
-    <p>Инновацион лойиҳалар: {a.loyhalar_soni}</p>
-    <p>Майдон: {a.maydoni} км²</p>
-    <p>Яратилган иш жойи: {a.ish_joyi_soni}</p>
+    <p>{t("region_a")}</p>
+    <p>{t("region_n")}: {a.loyhalar_soni}</p>
+    <p>{t("maydon")}: {a.maydoni} км²</p>
+    <p>{t("joy")}: {a.ish_joyi_soni}</p>
   </div>
 </div>
   )
   return (
     <div className={style.Regions}>
-      <h1>Инновацион ҳудудлар</h1>
+      <h1>{t("region")}</h1>
    {map}
     </div>
   );

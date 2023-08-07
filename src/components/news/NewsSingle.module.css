@@ -9,7 +9,8 @@
 }
 
 .IMG img {
-    width: 33%;
+    width: 32%;
+    height: 300px;
 }
 
 @media(min-width:0) and (max-width:700.9px) {
