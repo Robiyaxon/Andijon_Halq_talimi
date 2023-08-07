@@ -15,7 +15,7 @@ const map=data.map(a=>
   <h1>{a.manzil}</h1>
   <img src={a.img} alt="" />
   <div className={style.wrapper}>
-    <p>{t("region_a")}</p>
+    <p>{t("region_a")}: {a.aholi}</p>
     <p>{t("region_n")}: {a.loyhalar_soni}</p>
     <p>{t("maydon")}: {a.maydoni} км²</p>
     <p>{t("joy")}: {a.ish_joyi_soni}</p>
