@@ -65,6 +65,15 @@ const Reyting = () => {
           key: "umumiy",
           children: [{ title: "100", dataIndex: "umumiy", key: "umumiy" }],
           dataIndex: "",
+          render: (text) => {
+            return <p>{parseInt(text.umumiy )} ball</p>;
+          },
+          children: [{ title: "100", dataIndex: "umumiy", key: "umumiy" }],
+        },
+        {
+          title: "Baholash turi",
+          key: "Color",
+          dataIndex: "",
           children: [
             {
               title: "100.0",
@@ -81,21 +90,6 @@ const Reyting = () => {
               },
             },
           ],
-        },
-        {
-          title: "Baholash turi",
-          key: "Color",
-          dataIndex: "",
-          render: (text) => {
-            if(text.umumiy<50){
-              return <p className="red_error">Qoniqarsiz</p>;
-            }else if(text.umumiy>80){
-              return <p className="alo_error">A`lo</p>;
-            }else if(text.umumiy<80 || text.umumiy>50){
-              return <p className="blue_error">Yaxshi</p>;
-            }
-           
-          }
         }
       ];
   return (
