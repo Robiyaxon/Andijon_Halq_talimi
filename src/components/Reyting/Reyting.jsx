@@ -4,6 +4,8 @@ import { instance } from "../../api/API";
 import { Content } from "antd/lib/layout/layout";
 import style from "./Reyting.module.css"
 import { useTranslation } from 'react-i18next';
+import Column from 'antd/es/table/Column';
+import ColumnGroup from 'antd/es/table/ColumnGroup';
 
 const Reyting = () => {
   const {t} =useTranslation()
@@ -56,7 +58,9 @@ const Reyting = () => {
         <>
          <h1>{t("reyting")}</h1>
         <Content style={{ margin: "0 16px" }}>
-        <Table columns={columns} dataSource={data} />
+        <Table columns={columns} dataSource={data} >
+     
+        </Table>
        </Content> </>
         }
        

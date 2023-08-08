@@ -31,7 +31,7 @@ const News = () => {
   return (
     <div className="News_Page">
       <h1>{t("nav4")}</h1>
-      {!data.length ? "Hozircha ish o'rinlari mavjud emas!" : map2}
+      {!data.length ? "Hozircha Yangiliklar mavjud emas!" : map2}
     </div>
   );
 };

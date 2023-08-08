@@ -16,7 +16,7 @@ const NewsSingle = () => {
     <div className={style.Header} key={a.id}>
       <h1>{a.uz_title}</h1>
       <p>{a.date}</p>
-      <p>{a.uz_text}</p>
+      <p>{a.uz_text}{a.uz_text_2}{a.uz_text_3}</p>
       <div className={style.IMG}>
         <img src={"https://otfiv-andijon-admin.uz/" + a.img} alt="" />
         {a.img_2 ? (
