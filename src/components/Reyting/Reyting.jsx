@@ -24,7 +24,7 @@ const Reyting = () => {
         { title: "Yoshlar masalalari", dataIndex: "yoshlar", key: "yoshlar" },
         { title: "Ishlab chiqarish ta`limi", dataIndex: "ishlab_chiqarish", key: "ishlab_chiqarish" },
         { title: "Moliyaviy ishalari", dataIndex: "moliyaviy", key: "moliyaviy" },
-        { title: "Xojalik ishlari", dataIndex: "xojalik", key: "xojalik" },
+        { title: "Xo`jalik ishlari", dataIndex: "xojalik", key: "xojalik" },
         { title: "Ta`lim sifatini nazorat qilish", dataIndex: "talim_sifati", key: "talim_sifati" },
         { title: "Ijro intizomi", dataIndex: "ijro_intizomi", key: "ijro_intizomi" },
         { title: "Aniqlangan qoida buzarliklar", dataIndex: "jazo", key: "jazo" },
