@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useEffect } from "react";
 import { instance } from "../../api/API";
-import { Link } from "react-router-dom";
 const UzbNews = () => {
   const { t } = useTranslation();
   const [data, setData] = useState([]);
@@ -18,7 +17,7 @@ const UzbNews = () => {
 
   const map2 = data.map((a, index) => {
     return(
-    <a href={a.manba_link} alt="" key={index}>
+    <a href={a.link} alt="" key={index}>
       <figure className="snip1527">
         <div className="image">
           <img src={img1} alt="" />
