@@ -6,7 +6,30 @@
    border: none !important;
    margin: 0 2rem;
 }
-
+.alo_error{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background-color: blue;
+}
+.blue_error{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background-color: rgb(160, 160, 6);
+}
+.red_error{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  background-color: red;
+}
 :where(.css-dev-only-do-not-override-yp8pcc).ant-image .ant-image-img{
     height: 100%;
 }

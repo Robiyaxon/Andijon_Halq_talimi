@@ -54,10 +54,11 @@ const TopHeader = () => {
               <TbBrandTelegram />
             </a>
           </div>
+         
         </div>
         <div className={style.select}>
           <select name="lang" value={lang} onChange={handleChange}>
-            <option value="uz">O`zb</option>
+            <option value="uz">Uzb</option>
             <option value="eng">Eng</option>
             <option value="ru">Krill</option>
           </select>

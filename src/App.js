@@ -18,6 +18,7 @@ import Compititions from "./components/compititions/Compititions";
 import BurgerMenu from "./components/BurgerMenu/BurgerMenu";
 import NewsSingle from "./components/news/NewsSingle";
 import UzbNews from "./components/news/UzbNews";
+import Reyting from "./components/Reyting/Reyting";
 function App() {
   return (
     <div className="App">
@@ -40,6 +41,7 @@ function App() {
         <Route path="uzb_news/" element={<UzbNews/>} />
         <Route path="paxtachilik" element={<Paxtachilik />} />
         <Route path="tuman" element={<Region />} />
+        <Route path="reyting" element={<Reyting />} />
        
         <Route path="news/:id" element={<NewsSingle />} />
       </Routes>

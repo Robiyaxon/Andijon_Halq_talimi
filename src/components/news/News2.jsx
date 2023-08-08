@@ -8,14 +8,16 @@ import { Link } from "react-router-dom";
 const News2 = () => {
   const { t } = useTranslation();
   const [data, setData] = useState([]);
+  var slicedArray = data.slice(0, 4);
+
   useEffect(() => {
     instance.get("news/").then((response) => setData(response.data.local));
   }, []);
-  const map2 = data.map((a) => (
+  const map2 = slicedArray.map((a) => (
     <Link to={`news/${a.id}`} key={a.id}>
       <figure className="snip1527" key={a.id}>
         <div className="image">
-          <img src={"https://oliytalim.pythonanywhere.com/" + a.img} alt="" />
+          <img src={"https://otfiv-andijon-admin.uz/" + a.img} alt="" />
         </div>
         <figcaption>
           <div className="date">

@@ -2,7 +2,7 @@ import React from "react";
 import {TbBrandTelegram } from "react-icons/tb";
 import style from "./Contact.module.css";
 import { useTranslation } from "react-i18next";
-import { MailOutlined } from "@ant-design/icons";
+import { FacebookFilled, MailOutlined } from "@ant-design/icons";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -34,6 +34,7 @@ const Contact = () => {
             <a href="mailto:And_OTIF@mail.ru">
               <MailOutlined />
             </a>
+            
         </div>
       </div>
     </div>

@@ -43,6 +43,9 @@ const Navbar = () => {
       <NavLink to="elonlar">
         <Button>{t("Choices")}</Button>
       </NavLink>
+      <NavLink to="reyting">
+        <Button>{t("reyting")}</Button>
+      </NavLink>
     </div>
   );
 };

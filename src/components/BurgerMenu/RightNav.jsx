@@ -70,6 +70,11 @@ const RightNav = ({ open, setOpen }) => {
           {t("Choices")}
         </Link>
       </li>
+      <li>
+        <Link onClick={() => setOpen(!open)} to="/reyting">
+          {t("reyting")}
+        </Link>
+      </li>
     </Ul>
   );
 };

@@ -15,7 +15,7 @@ const News = () => {
     <Link to={`${a.id}`} key={a.id}>
       <figure className="snip1527" key={a.id}>
         <div className="image">
-          <img src={"https://oliytalim.pythonanywhere.com/" + a.img} alt="" />
+          <img src={"https://otfiv-andijon-admin.uz/" + a.img} alt="" />
         </div>
         <figcaption>
           <div className="date">

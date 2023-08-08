@@ -165,7 +165,7 @@ const FreeJob = () => {
   return (
     <div className={style.FreeJob}>
      
-      {!data.length ? <h2 className={style.Titlteh2}>Hozircha ish o'rinlari mavjud emas!</h2> : <>
+      {!data.length ? <h2 className={style.Titlteh2}>Hozircha Yangiliklar mavjud emas!</h2> : <>
       <h1>{t("work")}</h1>
       {map}
       </>}

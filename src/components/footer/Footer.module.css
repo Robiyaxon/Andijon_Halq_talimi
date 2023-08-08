@@ -7,7 +7,11 @@
     color: white;
     font-size: 20px;
 }
-
+.Footer a{
+    text-align: center;
+    color: white;
+    font-size: 20px;  
+}
 @media(min-width:0) and (max-width:750.9){
     .Footer {
         padding: 10px;
