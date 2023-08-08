@@ -5,7 +5,6 @@ import { Content } from "antd/lib/layout/layout";
 import style from "./Reyting.module.css"
 import { useTranslation } from 'react-i18next';
 import Column from 'antd/es/table/Column';
-import ColumnGroup from 'antd/es/table/ColumnGroup';
 
 const Reyting = () => {
   const {t} =useTranslation()

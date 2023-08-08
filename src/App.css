@@ -36,7 +36,9 @@
 :where(.css-dev-only-do-not-override-yp8pcc).ant-image .ant-image-img{
     height: 100%;
 }
-
+.App{
+  overflow: hidden;
+}
 .ant-image.css-dev-only-do-not-override-yp8pcc{
   grid-area: one;
 }
