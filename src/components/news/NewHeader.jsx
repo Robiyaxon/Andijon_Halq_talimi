@@ -9,7 +9,7 @@ const NewsHeader = (props) => {
     <div key={a.id}>
       {/* <MobileNav1 /> */}
       <div className={style.HeaderNews}>
-        <img src={"https://oliytalim.pythonanywhere.com/" +a.img} alt="rasm bor edi!" />
+        <img src={"https://otfiv-andijon-admin.uz/" +a.img} alt="rasm bor edi!" />
 
         <div className={style.BlockLink}>
           <h1 >

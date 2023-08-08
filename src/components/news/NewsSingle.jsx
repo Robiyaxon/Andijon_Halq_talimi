@@ -18,14 +18,14 @@ const NewsSingle = () => {
       <p>{a.date}</p>
       <p>{a.uz_text}</p>
       <div className={style.IMG}>
-        <img src={"https://oliytalim.pythonanywhere.com/" + a.img} alt="" />
+        <img src={"https://otfiv-andijon-admin.uz/" + a.img} alt="" />
         {a.img_2 ? (
-          <img src={"https://oliytalim.pythonanywhere.com/" + a.img_2} alt="" />
+          <img src={"https://otfiv-andijon-admin.uz/" + a.img_2} alt="" />
         ) : (
           <></>
         )}
         {a.img_3 ? (
-          <img src={"https://oliytalim.pythonanywhere.com/" + a.img_3} alt="" />
+          <img src={"https://otfiv-andijon-admin.uz/" + a.img_3} alt="" />
         ) : (
           <></>
         )}
