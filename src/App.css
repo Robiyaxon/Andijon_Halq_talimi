@@ -25,6 +25,12 @@
   padding: 4px;
   background-color: rgb(160, 160, 6);
 }
+.ant-table-tbody > tr > td{
+  text-align: center !important;
+}
+.ant-table-thead > tr > th{
+  text-align: center !important;
+}
 .red_error{
   color: white;
   display: flex;
