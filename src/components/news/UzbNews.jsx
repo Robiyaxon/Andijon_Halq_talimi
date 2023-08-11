@@ -11,9 +11,7 @@ const UzbNews = () => {
   useEffect(() => {
     instance.get("news/").then((response) => setData(response.data.edu));
   }, []);
-  function truncate(str, no_words) {
-    return str.split(" ").splice(0,no_words).join(" ");
-}
+
 
   const map2 = data.map((a, index) => {
     return(
@@ -27,7 +25,7 @@ const UzbNews = () => {
             <span className="day">{a.sana}</span>
           </div>
           <h3>{a.title}</h3>
-          <p>{a.text.slice(0,100) + '...'}</p>
+          <p>{a.text}</p>
         </figcaption>
         {/* <a href="/"></a> */}
       </figure>
