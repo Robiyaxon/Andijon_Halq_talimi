@@ -35,6 +35,11 @@ const UzbNews = () => {
     <div className="News_Page">
       <h1>{t("nav4")}</h1>
       {map2}
+
+
+
+
+      
     </div>
   );
 };
