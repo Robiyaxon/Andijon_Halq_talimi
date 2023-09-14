@@ -48,3 +48,6 @@
 .ant-image.css-dev-only-do-not-override-yp8pcc{
   grid-area: one;
 }
+.ant-table-thead > tr > th {
+  border: 1px solid rgb(228, 222, 222);
+  }

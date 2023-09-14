@@ -12,6 +12,23 @@
     width: 100%;
     height: 60vh;
 }
+.Moliya{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Moliya p{
+    width: 45%;
+    font-size: 12px;
+}
+.Moliya .pName{
+    width: 100%;
+    font-size: 13px;
+    border: 2px solid transparent;
+
+}
 @media(min-width:0) and (max-width:700.9px){
     .Reyting h1{
         width: 100%;

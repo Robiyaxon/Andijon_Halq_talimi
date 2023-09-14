@@ -165,7 +165,7 @@ class Slider extends React.Component {
     const { slides, heading } = this.props;
     const headingId = `slider-heading__${heading
       .replace(/\s+/g, "-")
-      .toLowerCase()}`;
+      .toLowerCase()}`
     const wrapperTransform = {
       transform:
         current === 3
@@ -212,7 +212,7 @@ class Slider extends React.Component {
           </ul>
         </div>
       </div>
-    );
+    )
   }
 }
 
@@ -220,7 +220,7 @@ const Link = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Slider heading="Example Slider" slides={slideData} t={t} />;
+      <Slider heading="Example Slider" slides={slideData} t={t} />
     </>
   );
 };
