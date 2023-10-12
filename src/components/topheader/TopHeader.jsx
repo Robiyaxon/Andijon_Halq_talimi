@@ -50,7 +50,7 @@ const TopHeader = () => {
           </div>
           
           <div className={style.blue}>
-            <a href="https://t.me/OTFIV_Andijon">
+            <a href="https://t.me/boshqarma_press">
               <TbBrandTelegram />
             </a>
           </div>
